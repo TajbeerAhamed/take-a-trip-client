@@ -26,7 +26,7 @@ const Header = () => {
                 </ul>
             </div>
             <div className="items-center flex-shrink-0 hidden lg:flex">
-                <button className="px-8 py-3 font-semibold rounded bg-violet-400 text-gray-900">Log in</button>
+               <Link to="/login" className="px-8 py-3 font-semibold rounded bg-violet-400 text-gray-900" > Log in</Link>
             </div>
             <button className="p-4 lg:hidden">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-6 h-6 text-gray-100">
