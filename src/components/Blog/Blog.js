@@ -17,8 +17,11 @@ const Blog = () => {
                     <p>SQL databases are better for multi-row transactions, while NoSQL is better for unstructured data like documents or JSON.</p>
                 </div>
                 <div>
-                    <h3 className="font-semibold">Lorem ipsum dolor sit amet.</h3>
-                    <p className="mt-1 text-gray-400">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, fugit? Aspernatur, ullam enim, odit eaque quia rerum ipsum voluptatem consequatur ratione, doloremque debitis? Fuga labore omnis minima, quisquam delectus culpa!</p>
+                    <h3 className="font-semibold">What is JWT, and how does it work?</h3>
+                    <p className="mt-1 text-gray-400">JWT is JSON Web Token is an open standard that defines a compact and self-contained way for securely transmitting information between parties as a JSON object. This information can be verified and trusted because it is digitally signed. JWTs can be signed using a secret or a public/private key pair using RSA or ECDSA.Basically the identity provider(IdP) generates a JWT certifying user identity and Resource server decodes and verifies the authenticity of the token using secret salt / public key.User sign-in using username and password or google/facebook.
+Authentication server verifies the credentials and issues a jwt signed using either a secret salt or a private key.
+User's Client uses the JWT to access protected resources by passing the JWT in HTTP Authorization header.
+Resource server then verifies the authenticity of the token using the secret salt/ public key.</p>
                 </div>
                 <div>
                     <h3 className="font-semibold">Lorem ipsum dolor sit amet.</h3>
