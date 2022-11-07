@@ -12,7 +12,7 @@ const Header = () => {
                 </a>
                 <ul className="items-stretch hidden space-x-3 lg:flex">
                     <li className="flex">
-                        <a rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 border-b-2 border-transparent">Link</a>
+                        <Link to={"/services"} rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 border-b-2 border-transparent">Service</Link>
                     </li>
                     <li className="flex">
                         <a rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 border-b-2 border-transparent text-violet-400 border-violet-400">Link</a>
