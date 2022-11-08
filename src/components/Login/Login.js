@@ -74,7 +74,7 @@ const handleGoogleSignIn = () =>{
 				<input type="password" name="password" id="password" placeholder="Enter Password" className="w-full px-3 py-2 border rounded-md border-gray-700 bg-gray-900 text-gray-100 focus:border-violet-400" required/>
 			</div>
 		</div>
-		<button type="button" className="w-full px-8 py-3 font-semibold rounded-md bg-violet-400 text-gray-900">Sign in</button>
+		<button type="submit" className="w-full px-8 py-3 font-semibold rounded-md bg-violet-400 text-gray-900">Sign in</button>
 	</form>
 </div>  
         </div>
