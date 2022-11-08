@@ -9,7 +9,7 @@ const Services = () => {
       {services.map((service) => (
         <Service key={service._id} service={service}></Service>
       ))}
-        <button className="btn btn-outline btn-success">Success</button>
+       
     </div>
   );
 };
