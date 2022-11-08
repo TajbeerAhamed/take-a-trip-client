@@ -27,9 +27,11 @@ const Home = () => {
     <HeaderDetails></HeaderDetails>
          <Banner></Banner>
          <Description></Description>
-         <Link to={'/services'}>
-         <button onClick={handleDetails} className="btn btn-success mx-auto">See All</button>
+        <div className='mt-10'>
+        <Link to={'/services'}>
+         <button onClick={handleDetails} className="btn btn-success  mx-auto">See All</button>
          </Link>
+        </div>
         </div>
         
     );
