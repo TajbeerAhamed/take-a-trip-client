@@ -1,11 +1,17 @@
-import React from 'react';
+import React from "react";
+import { useLoaderData } from "react-router-dom";
+import Service from "../Service/Service";
 
 const Services = () => {
-    return (
-        <div>
-            <h2>All Service Are here</h2>
-        </div>
-    );
+  const services = useLoaderData();
+  return (
+    <div className="grid sm:grid-cols-4 gap-3 ml-10 mt-10">
+      {services.map((service) => (
+        <Service key={service._id} service={service}></Service>
+      ))}
+        <button className="btn btn-outline btn-success">Success</button>
+    </div>
+  );
 };
 
 export default Services;

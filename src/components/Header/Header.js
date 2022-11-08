@@ -12,21 +12,19 @@ const Header = () => {
                 </a>
                 <ul className="items-stretch hidden space-x-3 lg:flex">
                     <li className="flex">
-                        <Link to={"/services"} rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 border-b-2 border-transparent">Service</Link>
+                        <Link to={"/"} rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 border-b-2 border-transparent">Home</Link>
+                    </li>
+                  
+                    <li className="flex">
+                        <Link to={"/services"} rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 border-b-2 border-transparent">Services</Link>
                     </li>
                     <li className="flex">
-                        <a rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 border-b-2 border-transparent text-violet-400 border-violet-400">Link</a>
-                    </li>
-                    <li className="flex">
-                        <a rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 border-b-2 border-transparent">Link</a>
-                    </li>
-                    <li className="flex">
-                        <Link to="/blog" rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 border-b-2 border-transparent">Blog</Link>
+                        <Link to={"/blog"} rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 border-b-2 border-transparent">Blog</Link>
                     </li>
                 </ul>
             </div>
             <div className="items-center flex-shrink-0 hidden lg:flex">
-               <Link to="/login" className="px-8 py-3 font-semibold rounded bg-violet-400 text-gray-900" > Log in</Link>
+               <Link to={"/login"} className="px-8 py-3 font-semibold rounded bg-violet-400 text-gray-900" >Log in</Link>
             </div>
             <button className="p-4 lg:hidden">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-6 h-6 text-gray-100">
