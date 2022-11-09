@@ -131,7 +131,7 @@ const Header = () => {
                           <rect x="14" y="11" width="7" height="12" />
                         </svg>
                         <span class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
-                          Company
+                         TAKE A TRIP
                         </span>
                       </a>
                     </div>
@@ -154,44 +154,44 @@ const Header = () => {
                   <nav>
                     <ul class="space-y-4">
                       <li>
-                        <a
+                        <Link to="/"
                           href="/"
                           aria-label="Our product"
                           title="Our product"
                           class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
-                          Product
-                        </a>
+                          Home
+                        </Link>
                       </li>
                       <li>
-                        <a
+                        <Link to="/services"
                           href="/"
                           aria-label="Our product"
                           title="Our product"
                           class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
-                          Features
-                        </a>
+                        Services
+                        </Link>
                       </li>
                       <li>
-                        <a
+                        <Link to='/blog'
                           href="/"
                           aria-label="Product pricing"
                           title="Product pricing"
                           class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
-                          Pricing
-                        </a>
+                        Blog
+                        </Link>
                       </li>
                       <li>
-                        <a
+                        <Link to="/login"
                           href="/"
                           aria-label="About us"
                           title="About us"
                           class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
-                          About us
-                        </a>
+                         Login
+                        </Link>
                       </li>
                       <li>
                         <a
