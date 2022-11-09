@@ -22,16 +22,17 @@ const Home = () => {
         dataService={dataService}
         ></HomeDetails>)
       }
+        <div className='mt-10 px-10'>
+        <Link to={'/services'}>
+         <button onClick={handleDetails} className="btn btn-success items-center px-10 text-white font-semibold bg-violet-400">See All</button>
+         </Link>
+        </div>
          
     </div>
     <HeaderDetails></HeaderDetails>
          <Banner></Banner>
          <Description></Description>
-        <div className='mt-10'>
-        <Link to={'/services'}>
-         <button onClick={handleDetails} className="btn btn-success  mx-auto">See All</button>
-         </Link>
-        </div>
+      
         </div>
         
     );

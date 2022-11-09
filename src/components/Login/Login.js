@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { AuthContext } from '../../contexts/AuthProvider/AuthProvider';
 import {GoogleAuthProvider} from 'firebase/auth';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Login = () => {
 
@@ -59,6 +59,9 @@ const handleGoogleSignIn = () =>{
 		<hr className="w-full text-gray-400"/>
 		<p className="px-3 text-gray-400">OR</p>
 		<hr className="w-full text-gray-400"/>
+	</div>
+	<div>
+		<p className='text-xs'>Don't have an Account? <Link to={'/signup'}> <span className='text-blue-500 text-sm'>Sign up</span></Link></p>
 	</div>
 	<form onSubmit={handleSubmit} novalidate="" action="" className="space-y-8 ng-untouched ng-pristine ng-valid">
 		<div className="space-y-4">

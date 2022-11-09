@@ -5,6 +5,7 @@ import Error from './components/Error/Error';
 import Home from './components/Home/Home';
 import Login from './components/Login/Login';
 import Services from './components/Services/Services';
+import Signup from './components/Signup/Signup';
 import Main from './Layout/Main';
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
       {
         path:'/',
         element:<Home></Home>,
-        loader: () => fetch("http://localhost:5000/services")
+        loader: () => fetch("https://take-a-trip-server.vercel.app/services")
       },
       {
         path: "/blog",
@@ -27,9 +28,13 @@ function App() {
         element: <Login></Login>,
       },
       {
+        path: "/signup",
+        element: <Signup></Signup>,
+      },
+      {
         path: "/services",
         element: <Services></Services>,
-        loader: () => fetch("http://localhost:5000/services")
+        loader: () => fetch("https://take-a-trip-server.vercel.app/services")
       },
     ]
    },
