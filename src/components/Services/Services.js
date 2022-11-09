@@ -4,6 +4,7 @@ import Service from "../Service/Service";
 
 const Services = () => {
   const services = useLoaderData();
+  
   return (
     <div className="grid sm:grid-cols-4 gap-3 ml-10 mt-10">
       {services.map((service) => (

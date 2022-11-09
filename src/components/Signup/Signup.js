@@ -3,10 +3,12 @@ import { useContext } from "react";
 import { AuthContext } from "../../contexts/AuthProvider/AuthProvider";
 import { GoogleAuthProvider } from "firebase/auth";
 import { Link, useNavigate } from "react-router-dom";
+import useTitle from "../../hooks/useTitle";
 
 const Signup = () => {
   const { signIn } = useContext(AuthContext);
   const navigate = useNavigate();
+  useTitle('Signup')
 
   const handleSubmit = (event) => {
     event.preventDefault();
