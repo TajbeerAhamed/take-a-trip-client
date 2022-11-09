@@ -8,7 +8,7 @@ const Service = ({service}) => {
 	<div className="flex flex-col justify-between p-6 space-y-8">
 		<div className="space-y-2">
 			<h2 className="text-3xl font-semibold tracking-wide">{service.name}</h2>
-			<p className="text-gray-100">{service.details}...</p>
+			<p className="text-gray-100">{service.details.slice(0,500)}</p>
 			<p className="text-gray-100">Price: {service.price}</p>
 		</div>
 		<button type="button" className="flex items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md bg-violet-400 text-gray-900">View Details</button>
