@@ -1,8 +1,10 @@
 import React from 'react';
 import { PhotoProvider, PhotoView } from 'react-photo-view';
+import { Link, useNavigate } from 'react-router-dom';
 
 const HomeDetails = ({dataService}) => {
-    const {img,name,price,details} = dataService
+	
+    const {_id,img,name,price,details} = dataService
     return (
         <div >
             <div className="max-w-xs rounded-md shadow-md bg-gray-900 text-gray-900">
@@ -28,8 +30,10 @@ const HomeDetails = ({dataService}) => {
 			<p className="text-gray-100">Price: {price}</p>
 			<p className="text-gray-100">{details.slice(0,100)}....</p>
 		</div>
-		<button type="button" className="flex items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md bg-violet-400 text-gray-900">View Details</button>
+		
+		<Link to={`/services/${_id}`}><button type="button" className="flex items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md bg-violet-400 text-gray-900">View Details</button></Link>
 	</div>
+	
 </div>
         </div>
     );

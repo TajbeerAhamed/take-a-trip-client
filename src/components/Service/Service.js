@@ -1,5 +1,6 @@
 import React from 'react';
 import { PhotoProvider, PhotoView } from 'react-photo-view';
+import { Link } from 'react-router-dom';
 import useTitle from '../../hooks/useTitle';
 
 const Service = ({service}) => {
@@ -28,7 +29,9 @@ const Service = ({service}) => {
 			<p className="text-gray-100">{service.details.slice(0,500)}</p>
 			<p className="text-gray-100">Price: {service.price}</p>
 		</div>
+		<Link to={`/services/${service._id}`}> 
 		<button type="button" className="flex items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md bg-violet-400 text-gray-900">View Details</button>
+		</Link>
 	</div>
 </div>
         </div>
