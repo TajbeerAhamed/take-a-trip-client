@@ -1,16 +1,13 @@
 import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
-import {
-  AuthContext,
-  userContext,
-} from "../../contexts/AuthProvider/AuthProvider";
+import { AuthContext } from "../../contexts/AuthProvider/AuthProvider";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { user, logOut } = useContext(AuthContext);
   const handleLogout = () => {
     logOut()
-      .then()
+      .then(() => console.log('Loged Out'))
       .catch((err) => console.log(err));
   };
   return (
@@ -53,7 +50,7 @@ const Header = () => {
               </span>
             </a>
 
-            {user?.uid ? (
+            {/* {user?.uid ? (
               <>
                 <li>
                   <Link className="text-white" to="/services">
@@ -68,13 +65,13 @@ const Header = () => {
               </>
             ) : (
               <></>
-            )}
+            )} */}
 
             <ul class="flex items-center hidden space-x-8 lg:flex">
               <li>
                 <Link
                   to={"/"}
-                  href="/"
+                 
                   aria-label="Our product"
                   title="Our product"
                   class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
@@ -82,20 +79,21 @@ const Header = () => {
                   Home
                 </Link>
               </li>
-              {/* <li>
-              <Link to={'/services'}
-                href="/"
-                aria-label="Our product"
-                title="Our product"
-                class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
-              >
-              Services
-              </Link>
-            </li> */}
+              <li>
+                <Link
+                  to={"/services"}
+                 
+                  aria-label="Our product"
+                  title="Our product"
+                  class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
+                >
+                  Services
+                </Link>
+              </li>
               <li>
                 <Link
                   to="/blog"
-                  href="/"
+                
                   aria-label="Product pricing"
                   title="Product pricing"
                   class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
@@ -103,6 +101,44 @@ const Header = () => {
                   Blog
                 </Link>
               </li>
+              {user?.uid ? (
+                <>
+                  <span className="">
+                    <img
+                      src={user?.photoURL}
+                      title={user?.displayName}
+                      className=" ml-5 h-10 rounded-full"
+                      alt=""
+                    />
+                  </span>
+                  <button
+                    onClick={handleLogout}
+                    class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-400"
+                  >
+                    Log Out
+                  </button>
+                  <li>
+                  <Link className="text-white" to="/addService">
+                    Add Service
+                  </Link>
+                </li>
+                <li>
+                  <Link className="text-white" to="/reviews">
+                    My Reviews
+                  </Link>
+                </li>
+                </>
+              ) : (
+                <>
+                <li><Link
+                    to="/login"
+                    className="text-white btn btn-ghost normal-case text-xl"
+                  >
+                    Login
+                  </Link></li>  
+               <li>   </li>
+                </>
+              )}
             </ul>
             <div class="lg:hidden">
               <button
@@ -186,16 +222,17 @@ const Header = () => {
                             Home
                           </Link>
                         </li>
-                        {/* <li>
-                        <Link to="/services"
-                          href="/"
-                          aria-label="Our product"
-                          title="Our product"
-                          class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                        >
-                        Services
-                        </Link>
-                      </li> */}
+                        <li>
+                          <Link
+                            to="/services"
+                            href="/"
+                            aria-label="Our product"
+                            title="Our product"
+                            class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                          >
+                            Services
+                          </Link>
+                        </li>
                         <li>
                           <Link
                             to="/blog"

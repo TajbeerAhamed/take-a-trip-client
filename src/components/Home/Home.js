@@ -16,24 +16,25 @@ const Home = () => {
   const dataServices = useLoaderData();
   return (
     <div>
-      <div className="grid sm:grid-cols-3 gap-3 ml-10 mt-10">
+      <div className="grid justify-center sm:grid-cols-3 gap-3 ml-10 mt-10">
         {dataServices.map((dataService) => (
           <HomeDetails
             key={dataService._id}
             dataService={dataService}
           ></HomeDetails>
         ))}
-        <div className="mt-10 px-10">
+      
+      </div>
+      <div className="mt-10 px-10 flex justify-center w-full">
           <Link to={"/services"}>
             <button
               onClick={handleDetails}
-              className="btn btn-success mx-auto  px-10 text-black font-semibold bg-violet-400"
+              className="btn btn-success px-10 text-black font-semibold bg-violet-400"
             >
               See All
             </button>
           </Link>
         </div>
-      </div>
       <HeaderDetails></HeaderDetails>
       <Banner></Banner>
       <Description></Description>

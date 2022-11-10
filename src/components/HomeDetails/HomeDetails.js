@@ -6,7 +6,7 @@ const HomeDetails = ({dataService}) => {
 	
     const {_id,img,name,price,details} = dataService
     return (
-        <div >
+        <div className='mx-auto'>
             <div className="max-w-xs rounded-md shadow-md bg-gray-900 text-gray-900">
 			<PhotoProvider  speed={() => 800}
         easing={(type) =>
