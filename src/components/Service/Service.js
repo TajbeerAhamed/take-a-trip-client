@@ -26,7 +26,7 @@ const Service = ({service}) => {
 	<div className="flex flex-col justify-between p-6 space-y-8">
 		<div className="space-y-2">
 			<h2 className="text-3xl font-semibold tracking-wide">{service.name}</h2>
-			<p className="text-gray-100">{service.details.slice(0,500)}</p>
+			<p className="text-gray-100">{service.details.slice(0,100)}...</p>
 			<p className="text-gray-100">Price: {service.price}</p>
 		</div>
 		<Link to={`/services/${service._id}`}> 

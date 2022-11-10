@@ -15,7 +15,7 @@ const HomeDetails = ({dataService}) => {
             : "cubic-bezier(0.34, 1.56, 0.64, 1)"
         }>
 					<figure>
-						<PhotoView src={img} style={{ objectFit: "cover" }}>
+						<PhotoView src={img} style={{ objectFit: "cover" , width:"w-full"}}>
 						<img src={img} alt="" className="object-cover object-center w-full rounded-t-md h-72 bg-gray-500" /> 
 						</PhotoView >
 						

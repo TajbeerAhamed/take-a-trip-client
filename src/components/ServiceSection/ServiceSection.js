@@ -6,16 +6,25 @@ const ServiceSection = ({serviceSection}) => {
     // console.log(serviceSection);
     
     return (
-        <div>
-            <div className="max-w-xs p-6 rounded-md shadow-md bg-gray-900 text-gray-50">
-	<img src={img} alt="" className="object-cover object-center w-full rounded-md h-72 bg-gray-500" />
-	<div className="mt-6 mb-2">
-		<span className="block text-xs font-medium tracking-widest uppercase text-violet-400">{name}</span>
-		<h2 className="text-xl font-semibold tracking-wide">{price}</h2>
+        <div className="max-w-lg p-4 shadow-md bg-gray-900 text-gray-100">
+	
+	<div className="space-y-4">
+		<div className="space-y-2">
+			<img src={img} alt="" className="block object-cover object-center w-full rounded-md h-72 bg-gray-500" />
+			
+		</div>
+		<div className="space-y-2">
+			<a rel="noopener noreferrer" href="#" className="block">
+				<h3 className="text-3xl font-semibold text-violet-400">{name}</h3>
+			</a>
+            <div className="flex items-center text-xs">
+				<span className="text-xl font-semibold text-violet-400">Price: {price}</span>
+			</div>
+			<p className="leading-snug text-gray-400">{details}</p>
+		</div>
+       
 	</div>
-	<p className="text-gray-100">{details}</p>
 </div>
-        </div>
     );
 };
 
