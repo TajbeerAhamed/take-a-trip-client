@@ -8,6 +8,7 @@ import Login from './components/Login/Login';
 import MyReviews from './components/MyReviews/MyReviews';
 import Services from './components/Services/Services';
 import Signup from './components/Signup/Signup';
+import Spinner from './components/Spinner/Spinner';
 import Main from './Layout/Main';
 import ServiceDetails from './ServiceDetails/ServiceDetails';
 
@@ -64,7 +65,7 @@ function App() {
   ])
   return (
     <div >
-     <RouterProvider router={router}></RouterProvider>
+     <RouterProvider fallbackElement={<Spinner></Spinner>} router={router}></RouterProvider>
     </div>
   );
 }

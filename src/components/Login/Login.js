@@ -43,10 +43,7 @@ const handleGoogleSignIn = () =>{
     return (
         <div >
           <div className="w-full mx-auto max-w-md p-4 rounded-md shadow sm:p-8 bg-white-400 text-gray-700">
-	<h2 className="mb-3 text-3xl font-semibold text-center">Login to your account</h2>
-	<p className="text-sm text-center text-gray-400">Dont have account?
-		<a href="#" rel="noopener noreferrer" className="focus:underline hover:underline">Sign up here</a>
-	</p>
+	
 	<div className="my-6 space-y-4">
 		<button  onClick={handleGoogleSignIn} aria-label="Login with Google" type="button" className="flex items-center justify-center w-full p-4 space-x-4 border rounded-md focus:ring-2 focus:ring-offset-1 border-gray-400 focus:ring-violet-400">
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" className="w-5 h-5 fill-current">
